@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    --button-border: 2px;
+
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:15px;
+    min-height: 100vh;
+    min-width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-light-gray);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a{
+    color:gray;
+    text-decoration: none;
+}
+
+.container{
+    background-color:blue;
+    display:flex;
+    max-width:920px;
+    height:500px;
+    height:100%;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis:33%;
+    flex-grow: 1;
+    padding:48px;
+}
+
+.card:first-child{
+    background-color: var(--bright-orange);
+}
+
+.card:first-child .button{
+    color: var(--bright-orange);
+}
+
+.card:nth-child(2){
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(2) .button{
+    color: var(--dark-cyan);
+}
+
+.card:nth-child(3){
+    background-color: var(--very-dark-cyan);
+}
+
+.card:nth-child(3) .button{
+    color: var(--very-dark-cyan);
+}
+
+.card img,.card h2{
+    margin-bottom:30px;
+}
+
+.card h2{
+    color:var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:2.65em;
+    text-transform: uppercase;
+}
+
+.card p{
+    color:var(--transparent-white);
+    line-height: 1.7em;
+    margin-top:-3px;
+    margin-bottom: 80px;
+}
+
+.button{
+    text-decoration: none;
+    background-color:var(--very-light-gray);
+    border: var(--button-border) solid var(--very-light-gray);
+    padding:calc(15px - var(--button-border)) calc(32px - var(--button-border)) calc(15px - var(--button-border)) calc(32px - var(--button-border));
+    border-radius:50px;
+    transition: all 0.2s;
+    display:inline-block;
+}
+
+.button:hover{
+    background-color:transparent;
+    color:var(--very-light-gray) !important;
+}
+
+@media only screen and (max-width:375px) {
+    body{
+        padding: 0px 18px 0px 18px;
+    }
+    .container{
+        margin-top:67px;
+    }
+
+    .card p{
+        margin-bottom:20px;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
