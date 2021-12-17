@@ -65,4 +65,4 @@ I want to continue improving the responsive aspect since I am currently just sol
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/DarKaRor)
+- Frontend Mentor - [@DarKaRor](https://www.frontendmentor.io/profile/DarKaRor)
